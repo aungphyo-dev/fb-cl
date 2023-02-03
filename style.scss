@@ -1,0 +1,102 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+::-webkit-scrollbar {
+  width: 4px;
+
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3rem;
+}
+
+@import "bootstrap/scss/bootstrap";
+.pf-img{
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+}
+.ovY{
+  overflow-y: scroll;
+}
+.list-group-item{
+  transition: 0.5s ease;
+  &:hover {
+    background: aqua;
+  }
+}
+.btn-hover{
+  transition: 0.5s;
+  &:hover{
+    background: aqua;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .text-control{
+    display: none;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .break-control{
+    display: none;
+  }
+  .color{
+    background: blueviolet;
+  }
+  .text-control{
+    display: inline-block;
+  }
+  .res-text{
+    font-size: calc(1.275rem + 0.3vw)
+  }
+}
+.show{
+  display: inline-block;
+}
+.align-text-top{
+  vertical-align: text-top;
+}
+.pf-img-home{
+  width: 55px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.fs-c{
+  font-size: 1rem;
+}
+.cursor-p{
+  cursor: pointer;
+}
+.rotate-c{
+  transform: rotate(90deg) !important;
+}
+.hover-under{
+  transition: 0.5s;
+  &:hover{
+    color: blue !important;
+    text-decoration: blue underline !important;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .sm-none{
+    display: inline-block;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .pf-img-home{
+    width: 35px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .sm-none{
+    display: none;
+  }
+  .fs-e{
+    font-size: 1.25rem;
+  }
+}
